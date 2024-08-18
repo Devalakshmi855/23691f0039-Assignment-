@@ -1,0 +1,29 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between items as needed */
+}
+
+.product-card {
+    flex: 1 1 calc(33.333% - 20px); /* Adjust the percentage to control the number of items per row */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.product-card:hover {
+    transform: translateY(-10px); /* Move the card up */
+    background-color: #e0f7fa; /* Change color on hover */
+}
+
+.product-card h3 {
+    margin: 0 0 8px;
+}
+
+.product-card p {
+    margin: 4px 0;
+}
